@@ -67,8 +67,9 @@
       button.addEventListener('click', (event) => {
         const amount = Number(document.getElementById('amount').value);
         const months = Number(document.getElementById('months').value);
+        
         const interest = Number(document.getElementById('interest').value);
-
+        
         const emi = EMI.Loan(amount, months, interest);
         const table = EMI.emiToHtmlTable(emi)
 
